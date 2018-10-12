@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Background from "../images/background_image.png";
 
 class Header extends Component {
   render() {
@@ -11,3 +12,15 @@ class Header extends Component {
 }
 
 export default Header;
+
+var sectionStyle = {
+  width: "100%",
+  height: "400px",
+  backgroundImage: "url(" + { Background } + ")"
+};
+
+class Section extends Component {
+  render() {
+    return <section style={sectionStyle} />;
+  }
+}
