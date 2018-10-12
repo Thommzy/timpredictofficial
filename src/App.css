@@ -17,6 +17,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.header {
+  background: #071f2d;
+}
 
 .App-link {
   color: #61dafb;
