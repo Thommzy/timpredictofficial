@@ -19,6 +19,12 @@
 }
 .header {
   background: #071f2d;
+  height: 550px;
+}
+
+.logo-img {
+  margin-left: 40px;
+  overflow: hidden;
 }
 
 .App-link {

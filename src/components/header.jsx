@@ -1,26 +1,33 @@
 import React, { Component } from "react";
-import Background from "../images/background_image.png";
+import Particles from "react-particles-js";
+
+const particleOpt = {
+  particles: {
+    number: {
+      value: 20,
+      density: {
+        enable: true,
+        value_area: 1000
+      }
+    }
+  }
+};
 
 class Header extends Component {
   render() {
     return (
       <div className="header">
-        <p>Hi</p>
+        <div className="logo-img">
+          <img
+            className="img-responsive"
+            src={require("../images/logo.png")}
+            alt="timpredict_logo"
+          />
+        </div>
+        <Particles params={particleOpt} />
       </div>
     );
   }
 }
 
 export default Header;
-
-var sectionStyle = {
-  width: "100%",
-  height: "400px",
-  backgroundImage: "url(" + { Background } + ")"
-};
-
-class Section extends Component {
-  render() {
-    return <section style={sectionStyle} />;
-  }
-}
